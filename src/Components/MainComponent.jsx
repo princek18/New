@@ -29,14 +29,20 @@ export default class MainComponent extends Component {
         this.style2 = {
             fontSize: "50px"
         }
+        this.fun = ()  => {
+            setInterval(() => {
+                if(this.state.flag){
+                this.setState({date: new Date()})
+                }
+                this.setState({count: this.state.count+1})
+            }, 1000)
+        }
     }
     componentDidMount(){
-        setInterval(() => {
-            if(this.state.flag){
-            this.setState({date: new Date()})
-            }
-            this.setState({count: this.state.count+1})
-        }, 1000)
+        this.fun();
+    }
+    componentWillUnmount() {
+        clearInterval(this.fun);
     }
     render() {
         return (
