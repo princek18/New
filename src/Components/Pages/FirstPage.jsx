@@ -1,8 +1,9 @@
 import React from 'react'
-import { DisplayComponentB } from './DisplayComponentB'
-import MainComponent from './MainComponent'
-import { WrapperComponent } from './WrapperComponent'
+
 import { Link } from 'react-router-dom'
+import { DisplayComponentB } from '../DisplayComponents/DisplayComponentB'
+import MainComponent from '../MainComponent'
+import { WrapperComponent } from '../WrapperComponent'
 
 export const FirstPage = () => {
     return (
@@ -10,7 +11,7 @@ export const FirstPage = () => {
             <Link to="/"><h1>Home Page</h1></Link>
             <WrapperComponent>
                 <MainComponent />
-                <DisplayComponentB />
+                <DisplayComponentB/>
             </WrapperComponent>
         </div>
     )

@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
-import { UserClassContext } from './Context/ClassContext'
+import React, { Component, createRef } from 'react'
+import { UserClassContext } from '../Context/ClassContext'
 
 export default class ClassContextMain extends Component {
     static contextType = UserClassContext;
+    inputRef = createRef();
     state = {
         task: ""
     }
@@ -13,11 +14,14 @@ export default class ClassContextMain extends Component {
         this.addTask(this.state.task);
         this.setState({task: ""})
     }
+    componentDidMount(){
+        this.inputRef.current.focus();
+    }
     render() {
         return (
             <div style={{textAlign: "center"}}>
                 <form onSubmit={this.sub}>
-                    <input type="text" placeholder='Enter any task:' value={this.state.task} onChange={(e) => this.setState({task: e.target.value})} />
+                    <input ref={this.inputRef} type="text" placeholder='Enter any task:' value={this.state.task} onChange={(e) => this.setState({task: e.target.value})} />
                     <button type='submit'>Save</button>
                 </form>
                 <h3>Tasks: </h3>

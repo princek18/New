@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import scenary from '../Styles/scenary.jpg'
-import '../Styles/style.css'
+import scenary from '../../Styles/scenary.jpg'
+import '../../Styles/style.css'
 
 export const DisplayComponent = ({ tasks, deleteData }) => {
     const [imageFlag, setImageFlag] = useState(true);

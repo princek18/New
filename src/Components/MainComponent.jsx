@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { DisplayComponent } from './DisplayComponent';
+import { DisplayComponent } from './DisplayComponents/DisplayComponent';
+import ErrorBoundary from './Error Boundary/ErrorBoundary';
 import { InputComponent } from './InputComponent';
 
 
@@ -60,7 +61,9 @@ export default class MainComponent extends Component {
                 <button type='submit'>Save</button>
                 </form>
                 </InputComponent>
+                <ErrorBoundary>
                 <DisplayComponent tasks={this.state.tasks} deleteData={this.delete}/>
+                </ErrorBoundary>
             </div>
         )
     }

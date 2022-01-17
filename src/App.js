@@ -1,15 +1,15 @@
 import { Footer } from './Components/Footer';
 import { Header } from './Components/Header';
 import './App.css';
-import { FirstPage } from './Components/FirstPage';
+import { FirstPage } from './Components/Pages/FirstPage';
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from "react-router-dom";
-import { SecondPage } from './Components/SecondPage';
+import { SecondPage } from './Components/Pages/SecondPage';
+import { ThirdPage } from './Components/Pages/ThirdPage';
 import { HomePage } from './Components/HomePage';
-import { ThirdPage } from './Components/ThirdPage';
 
 function App() {
   return (
