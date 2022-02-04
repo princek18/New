@@ -10,6 +10,8 @@ export const HomePage = () => {
             <Link to='/second'><h2>Second Page</h2></Link>
             <hr />
             <Link to='/third'><h2>Third Page</h2></Link>
+            <hr />
+            <Link to='/fourth'><h2>Fourth Page</h2></Link>
         </div>
     )
 }

@@ -12,7 +12,7 @@ export const FunctionContextMain = () => {
     }
     useEffect(() => {
         inputRef.current.focus();
-    })
+    }, []);
     return (
         <div style={{textAlign: "center"}}>
         <form onSubmit={add}>
