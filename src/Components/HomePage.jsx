@@ -12,6 +12,8 @@ export const HomePage = () => {
             <Link to='/third'><h2>Third Page</h2></Link>
             <hr />
             <Link to='/fourth'><h2>Fourth Page</h2></Link>
+            <hr />
+            <Link to='/fifth'><h2>Fifth Page</h2></Link>
         </div>
     )
 }

@@ -11,6 +11,7 @@ import { SecondPage } from './Components/Pages/SecondPage';
 import { ThirdPage } from './Components/Pages/ThirdPage';
 import { HomePage } from './Components/HomePage';
 import { FourthPage } from './Components/Pages/FourthPage';
+import { FifthPage } from './Components/Pages/FifthPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path='/second' element={<SecondPage />} />
           <Route path='/third' element={<ThirdPage/>} />
           <Route path='/fourth' element={<FourthPage/>} />
+          <Route path='/fifth' element={<FifthPage/>} />
         </Routes>
         <Footer />
       </div>
