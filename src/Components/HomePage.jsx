@@ -13,7 +13,9 @@ export const HomePage = () => {
             <hr />
             <Link to='/fourth'><h2>Fourth Page</h2></Link>
             <hr />
-            <Link to='/fifth'><h2>Fifth Page</h2></Link>
+            <Link to='/fifth'><h2 className='fifth'>Fifth Page</h2></Link>
+            <hr />
+            <Link to='/sixth'><h2>Sixth Page</h2></Link>
         </div>
     )
 }

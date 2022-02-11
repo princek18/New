@@ -7,7 +7,7 @@ export const ReduxSagaDisplay = () => {
     const data = useSelector(state => state);
   return (
     <div>
-        <button onClick={() => dispatch({type: "API_REQUEST"})}>Fetch</button>
+        <button className="btn" onClick={() => dispatch({type: "API_REQUEST"})}>Fetch</button>
         {(data && data.length>0) ? data.map((user) => {
                 return <ul key={user.id} onClick={() => dispatch({type: "DELETE_DATA", payload: user.id})}>
                     <p>Name: {user.name}</p>

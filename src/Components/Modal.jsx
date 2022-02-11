@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import styled from 'styled-components'
+import { StyledButton } from './StyledComponent/StyledButtons'
 
 export const Modal = ({setIsOpen}) => {
     const style = {
@@ -12,16 +12,7 @@ export const Modal = ({setIsOpen}) => {
     textAlign: "center",
     padding: "10px"
     }
-    const StyledButton = styled.button`
-    width: 60px;
-    height: 30px;
-    border: 0px;
-    border-radius: 10px;
-    background-color: #4bdb71;
-    color: white;
-    font-weight: 500;
-    cursor: pointer
-    `;
+
     return ReactDOM.createPortal(
         <div style={style}>
             <h1>This is the Modal!</h1>
